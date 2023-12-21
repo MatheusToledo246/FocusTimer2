@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    <title>FocusTimer2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <div>
+            <section id="timer" class="flex">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            <section id="controls" class="flex">
+                <button 
+                    data-action="toggleRunning"
+                    class="ph ph-play-circle">
+                    <span class="sr-only">Iniciar</span>
+                </button>
+                <button 
+                data-action="toggleRunning"
+                class="ph ph-pause-circle">
+                <span class="sr-only">Parar</span>
+            </button>
+                <button
+                    data-action="reset"
+                    class="ph ph-stop-circle">
+                    <span class="sr-only">Reiniciar</span>
+                </button>
+                <button
+                    data-action="more"
+                    class="ph ph-plus-circle">
+                    <span class="sr-only">Aumentar</span>
+                </button>
+                <button
+                    data-action="less"
+                    class="ph ph-minus-circle">
+                    <span class="sr-only">Diminuir</span>
+                </button>
+            </section>
+        </div>
+        <section id="toggle-mode" class="flex">
+            <button data-action="forest"> 
+                <span class="sr-only">Alterar Modo!</span>
+                <img src="./assets/Card 01.svg" alt="imagem de uma arvore">
+            </button>
+            <button data-action="raind">
+                <span class="sr-only">Alterar Modo!</span>
+                <img src="./assets/Card 02.svg" alt="imagem de uma nuvem">
+            </button>
+            <button data-action="coffee">
+                <span class="sr-only">Alterar Modo!</span>
+                <img src="./assets/Card 03.svg" alt="imagem de uma barraca">
+            </button>
+            <button data-action="firePlace">
+                <span class="sr-only">Alterar Modo!</span>
+                <img src="./assets/Card 04.svg" alt="imagem de fogo">
+            </button>
+        </section>
+    </div>
+</body>
+</html>
